@@ -1,24 +1,48 @@
 import React from 'react';
-import logo from './logo.svg';
+import 
 import './App.css';
+import ButtonPrf from  './componentes/ButtonPrf';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="calc-wrapper">
+        <div className="row">
+          <Input></Input>
+
+        </div>
+        <div className="row">
+          <ButtonPrf> C</ButtonPrf>
+          <ButtonPrf>Del</ButtonPrf>
+          <ButtonPrf>%</ButtonPrf>
+          <ButtonPrf>/</ButtonPrf>
+        </div>
+        
+        <div className="row">
+          <ButtonPrf>7</ButtonPrf>
+          <ButtonPrf>8</ButtonPrf>
+          <ButtonPrf>9</ButtonPrf>
+          <ButtonPrf>X</ButtonPrf>
+        </div>        
+        <div className="row">
+          <ButtonPrf>4</ButtonPrf>
+          <ButtonPrf>5</ButtonPrf>
+          <ButtonPrf>6</ButtonPrf>
+          <ButtonPrf>-</ButtonPrf>
+        </div>        
+        <div className="row">
+          <ButtonPrf>1</ButtonPrf>
+          <ButtonPrf>2</ButtonPrf>
+          <ButtonPrf>3</ButtonPrf>
+          <ButtonPrf>+</ButtonPrf>
+        </div>        
+        <div className="row">
+          <ButtonPrf>0</ButtonPrf>
+          <ButtonPrf>.</ButtonPrf>
+          <ButtonPrf>=</ButtonPrf>
+        </div>                
+      </div>
+    
     </div>
   );
 }
